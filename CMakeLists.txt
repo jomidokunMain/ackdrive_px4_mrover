@@ -78,6 +78,10 @@ install(TARGETS ackdrive_px4_mrover
 install(TARGETS
     mrover_comms
     DESTINATION lib/ackdrive_px4_mrover)
+install(
+  PROGRAMS
+  scripts/encoder_map.py
+  DESTINATION lib/ackdrive_px4_mrover)
 
 
 if(BUILD_TESTING)
